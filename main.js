@@ -35,10 +35,14 @@ const app = Vue.createApp({
         },
         
         title() {
-            if (this.onSales) {
                 return `${this.brand} ${this.product}`
+        },
+        
+        sales(){
+            if (this.onSales) {
+                return `${this.title} is on sales!`
             }
-            return this.product
+            return ''
         }
         
     }

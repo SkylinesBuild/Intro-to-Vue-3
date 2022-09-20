@@ -1,7 +1,7 @@
 const app = Vue.createApp({
     data() {
         return {
-            onSales: true,
+            onSale: true,
             cart:0,
             product: 'Socks',
             brand: 'Vue Mastery',
@@ -38,8 +38,8 @@ const app = Vue.createApp({
                 return `${this.brand} ${this.product}`
         },
         
-        sales(){
-            if (this.onSales) {
+        sale(){
+            if (this.onSale) {
                 return `${this.title} is on sales!`
             }
             return ''
